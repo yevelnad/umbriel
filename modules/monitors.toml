@@ -1,0 +1,6 @@
+[output."HKC OVERSEAS LIMITED P02 0000000000001"]
+mode = "1920x1080@100"
+position = [0,0]
+scale = 1
+vrr = "always"
+bit_depth = 10

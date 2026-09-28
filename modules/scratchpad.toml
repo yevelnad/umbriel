@@ -1,0 +1,13 @@
+
+[[window_rule]]
+match.app_id = "^discord$"
+default_scratchpad = "default"
+
+[[window_rule]]
+match.app_id = "^Spotify$"
+default_scratchpad = "default"
+
+[[window_rule]]
+match.app_id = "^com.obsproject.Studio$"
+default_scratchpad = "default"
+opacity = 0.90

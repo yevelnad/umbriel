@@ -16,7 +16,10 @@
 files = ["modules/workspace.toml",
         "modules/animations.toml",
         "modules/keybinds.toml",
-        "modules/windowrules.toml"
+        "modules/windowrules.toml",
+        "modules/monitors.toml",
+        "modules/scratchpad.toml"
+
 ]
 
 [include.optional]
@@ -111,7 +114,7 @@ match.namespace = "^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|
 blur = true
 blur_ignore_alpha = 0.5
 blur_popups = true
-blur_optimized = false
+blur_optimized = true
 
 # ==============================================================================
 # Overview
