@@ -1,7 +1,7 @@
 # ==============================================================================
 # Window rules
 # Rules combine in order, with later values overriding earlier ones.
-# https://docs.noctalia.dev/umbriel/window-rules/
+# https://docs.noctalia.dev/umbriel/window-rules/d
 
 # Blur windows using the non-optimized path so translucent windows include
 # overlapping windows behind them.
@@ -9,6 +9,10 @@
 blur = true
 blur_optimized = true
 opacity = 0.8
+
+[[window_rule]]
+match.app_id = "^steam_app_default$"
+default_workspace = 5
 
 [[window_rule]]
 match.app_id = "org.kde.dolphin$"
@@ -24,6 +28,7 @@ opacity = 1
 match.app_id = "^dev.zed.Zed$"
 default_floating = false
 opacity = 0.90
+default_workspace = 2
 
 [[window_rule]]
 match.app_id = "^dev.noctalia.Noctalia$"

@@ -28,7 +28,7 @@ files = ["noctalia.toml"]
 # Optional session examples. XWayland support is enabled by default.
 # https://docs.noctalia.dev/umbriel/configuration/#general
 [general]
-autostart = ["noctalia", "google-chrome-browser"]
+autostart = ["noctalia", "google-chrome-stable", "snappy-switcher --daemon"]
 # xwayland = false
 
 # ==============================================================================
