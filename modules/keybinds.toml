@@ -1,23 +1,19 @@
-# ==============================================================================
-# Keybinds
-# Defining this table replaces the built-in bind set, so every active bind that
-# should remain available is listed here.
-# Syntax: https://docs.noctalia.dev/umbriel/keybinds/
-# Actions: https://docs.noctalia.dev/umbriel/actions/
 [keybinds]
 
 # Applications and session
 "Mod+Return" = { action = "spawn:kitty", repeat = false }
-"Mod+E" = "spawn:dolphin"
-"Mod+Z" = "spawn:zeditor"
-"Mod+Shift+C" = "spawn: zeditor ~/.config/umbriel"
-"Mod+Shift+W" = "spawn:noctalia msg plugin yngwe/wallpaperCarousel:service all toggle"
-"Mod+bracketleft" = "spawn:noctalia msg plugin alexander/screen-toolkit:service all recordFullscreenMp4"
-"Mod+bracketright" = "spawn:noctalia msg plugin alexander/screen-toolkit:service all recordStop"
-"Mod" = "spawn:noctalia msg panel-toggle launcher"
+"Mod+U" = "spawn:noctalia msg panel-toggle launcher"
 "Mod+Q" = { action = "window-close", repeat = false }
 "Mod+Escape" = "session-quit"
 "Mod+Shift+Escape" = { action = "shortcuts-inhibit-toggle", allow_when_inhibited = true, repeat = false }
+"Mod+Shift+W" = "spawn:noctalia msg plugin yngwe/wallpaperCarousel:service all toggle"
+"Mod+Minus" = "spawn:noctalia msg plugin alexander/screen-toolkit:service all recordFullscreenMp4"
+"Mod+Shift+Minus" = "spawn:noctalia msg plugin alexander/screen-toolkit:service all recordStop"
+"Mod+E" = { action = "spawn:dolphin", repeat = false}
+"Mod+B" = { action = "spawn:google-chrome-stable", repeat = false}
+"Mod+Z" = { action = "spawn:zeditor", repeat = false}
+"Mod+D" = { action = "spawn:dolphin", repeat = false}
+
 
 # Focus and movement
 "Mod+Left" = "window-focus-left"
@@ -34,13 +30,14 @@
 "Mod+Shift+Up" = "window-move-up"
 "Mod+Shift+Right" = "column-move-right"
 
+
 # Window state and layout
 "Mod+T" = { action = "window-toggle-floating", repeat = false }
 "Mod+Shift+T" = { action = "window-focus-switch-floating", repeat = false }
 "Mod+P" = { action = "window-toggle-pinned", repeat = false }
-"Mod+M" = { action = "window-toggle-maximize-to-edges", repeat = false }
-"Mod+F" = { action = "window-toggle-fullscreen", repeat = false }
-"Mod+W" = { action = "window-toggle-maximize", repeat = false }
+"Mod+F" = { action = "window-toggle-maximize-to-edges", repeat = false }
+"Mod+SHIFT+F" = { action = "window-toggle-fullscreen", repeat = false }
+"Mod+Ctrl+F" = { action = "window-toggle-maximize", repeat = false }
 "Mod+R" = "window-cycle-primary-extent"
 "Mod+Shift+R" = "window-cycle-primary-extent-back"
 "Mod+Comma" = "window-consume-left"

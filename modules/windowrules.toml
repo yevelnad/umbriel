@@ -7,22 +7,28 @@
 # overlapping windows behind them.
 [[window_rule]]
 blur = true
-blur_optimized = false
+blur_optimized = true
+opacity = 0.8
 
 [[window_rule]]
-match.app_id = "^dev.noctalia.Noctalia$"
+match.app_id = "org.kde.dolphin$"
 default_floating = true
 default_floating_size_px = { width = 1020, height = 900 }
 
 [[window_rule]]
 match.app_id = "^google-chrome$"
-default_maximize = true
-opacity = 0.9
+default_floating = false
+opacity = 1
 
 [[window_rule]]
 match.app_id = "^dev.zed.Zed$"
-default_maximize = true
-opacity = 0.9
+default_floating = false
+opacity = 0.90
+
+[[window_rule]]
+match.app_id = "^dev.noctalia.Noctalia$"
+default_floating = false
+default_floating_size_px = { width = 1020, height = 900 }
 
 [[window_rule]]
 match.app_id = "^dev.noctalia.UmbrielSharePicker$"

@@ -13,11 +13,14 @@
 # Optional split configuration
 # https://docs.noctalia.dev/umbriel/configuration/#include
 [include]
-files = ["config/animations.toml", "config/windowrules.toml", "config/keybinds.toml"]
-
+files = ["modules/workspace.toml",
+        "modules/animations.toml",
+        "modules/keybinds.toml",
+        "modules/windowrules.toml"
+]
 
 [include.optional]
-files = []
+files = ["noctalia.toml"]
 
 # ==============================================================================
 # General
@@ -25,8 +28,7 @@ files = []
 # Optional session examples. XWayland support is enabled by default.
 # https://docs.noctalia.dev/umbriel/configuration/#general
 [general]
-autostart = ["noctalia", "kitty"]
-show_cheatsheet = true
+autostart = ["noctalia", "google-chrome-browser"]
 # xwayland = false
 
 # ==============================================================================
@@ -51,11 +53,18 @@ radius = 3
 
 [appearance]
 prefer_no_csd = true
-border_width = 1
+border_width = 2
 outer_border_width = 0
-corner_radius = 10
+corner_radius = 15
 drag_opacity = 0.75
 opaque_fullscreen = true
+
+[appearance.shadow]
+enabled = true
+softness = 20
+offset_x = 2
+offset_y = 2
+
 # Choose the background color shown if the lock screen takes too long to appear.
 # [colors]
 # backdrop = "#000000FF"
@@ -71,6 +80,12 @@ numlock_toggle = true
 # [input.focus]
 # follows_mouse = true
 
+# ==============================================================================
+# Keybinds
+# Defining this table replaces the built-in bind set, so every active bind that
+# should remain available is listed here.
+# Syntax: https://docs.noctalia.dev/umbriel/keybinds/
+# Actions: https://docs.noctalia.dev/umbriel/actions/
 
 # ==============================================================================
 # Layout
@@ -79,11 +94,13 @@ numlock_toggle = true
 # their most recently focused row when focus leaves and later returns.
 # https://docs.noctalia.dev/umbriel/layout/
 [layout]
-extent_presets = [0.333, 0.5, 0.667]
 mode = "dwindle"
+gap = 10
+extent_presets = [0.333, 0.5, 0.667]
 
 [layout.scrolling]
 default_extent_fraction = 0.5
+
 
 
 # ==============================================================================

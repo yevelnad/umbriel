@@ -1,18 +1,18 @@
 [animation]
 enabled = true
 duration_ms = 250
-curve = "easeout"
+curve = "bounce"
 
 [animation.windows_in]
 enabled = true
-curve = "spring:1,900"
+curve = "spring:1,1400"
 style = "popin"
 scale = 0.5
 
 [animation.windows_out]
 enabled = true
-curve = "spring:1,1400"
-style = "popin"
+curve = "spring:0.9,1400"
+style = "slide"
 scale = 0.8
 
 [animation.windows_move]
@@ -21,7 +21,7 @@ curve = "spring:1,900"
 
 [animation.workspaces]
 enabled = true
-curve = "spring:1,800"
+curve = "spring:3,2800"
 
 [animation.overview]
 enabled = true
