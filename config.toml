@@ -31,9 +31,11 @@ files = ["noctalia.toml"]
 # Optional session examples. XWayland support is enabled by default.
 # https://docs.noctalia.dev/umbriel/configuration/#general
 [general]
-autostart = ["noctalia", "google-chrome-stable", "snappy-switcher --daemon"]
+autostart = ["noctalia",
+  #"google-chrome-stable",
+            "snappy-switcher --daemon"]
 # xwayland = false
-
+show_cheatsheet = false
 # ==============================================================================
 # Outputs
 
@@ -79,6 +81,9 @@ offset_y = 2
 [input.keyboard]
 numlock_toggle = true
 
+[input.focus]
+follows_mouse = true
+follows_mouse_max_scroll = 0.5
 # Focus can follow the pointer across tiled, floating, and pinned windows.
 # [input.focus]
 # follows_mouse = true

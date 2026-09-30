@@ -8,6 +8,11 @@ match.app_id = "^Spotify$"
 default_scratchpad = "default"
 
 [[window_rule]]
+match.app_id = "^brave-origin$"
+default_scratchpad = "default"
+opacity = 1
+
+[[window_rule]]
 match.app_id = "^com.obsproject.Studio$"
 default_scratchpad = "default"
 opacity = 0.90
