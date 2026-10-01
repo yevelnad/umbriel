@@ -2,5 +2,5 @@
 mode = "1920x1080@100"
 position = [0,0]
 scale = 1
-vrr = "always"
 bit_depth = 10
+workspaces = ["WEB", "EDITORS", "OTHER STUFFS", "GAME LAUNCHERS", "GAME"]

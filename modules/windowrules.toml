@@ -30,8 +30,12 @@ default_floating = true
 default_floating_size_px = { width = 1020, height = 900 }
 
 [[window_rule]]
-match.app_id = "^nvim$"
-default_workspace = 2
+match.app_id = "^io.github.Faugus.faugus-launcher$"
+default_workspace = 4
+
+[[window_rule]]
+match.app_id = "^steam$"
+default_workspace = 4
 
 [[window_rule]]
 match.app_id = "^net.nokyan.Resources$"
@@ -41,8 +45,8 @@ default_floating_size_px = { width = 1020, height = 900 }
 
 [[window_rule]]
 match.app_id = "^google-chrome$"
-default_floating = false
 opacity = 1
+default_workspace = 1
 
 [[window_rule]]
 match.app_id = "^dev.zed.Zed$"
@@ -70,6 +74,7 @@ match.title = "^(steam|Friends List)$"
 default_floating = true
 default_floating_size_px = { width = 600, height = 800 }
 opacity = 1
+default_workspace = 4
 
 [[window_rule]]
 match.title = "^notificationtoasts_.+_desktop"
