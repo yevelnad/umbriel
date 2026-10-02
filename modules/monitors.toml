@@ -3,4 +3,4 @@ mode = "1920x1080@100"
 position = [0,0]
 scale = 1
 bit_depth = 10
-workspaces = ["WEB", "EDITORS", "OTHER STUFFS", "GAME LAUNCHERS", "GAME"]
+workspaces = ["1 WEB", "2 EDITORS", "3 OTHER STUFFS", "4 GAME LAUNCHERS", "5 GAME"]
