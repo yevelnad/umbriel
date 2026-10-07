@@ -32,6 +32,7 @@ files = ["noctalia.toml"]
 # https://docs.noctalia.dev/umbriel/configuration/#general
 [general]
 autostart = ["noctalia",
+            "sunshine",
   #"google-chrome-stable",
             "snappy-switcher --daemon"]
 # xwayland = false
@@ -110,7 +111,7 @@ follows_mouse_max_scroll = 0.5
 # https://docs.noctalia.dev/umbriel/layout/
 [layout]
 mode = "dwindle"
-gap = 10
+gap = 3
 extent_presets = [0.333, 0.5, 0.667]
 
 [layout.scrolling]
@@ -124,7 +125,7 @@ default_extent_fraction = 0.5
 [[layer_rule]]
 match.namespace = "^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd|desktop-widget-[^\"]*)$"
 blur = true
-blur_ignore_alpha = 0.5
+blur_ignore_alpha = 0.7
 blur_popups = true
 blur_optimized = true
 

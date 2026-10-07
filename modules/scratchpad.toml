@@ -8,6 +8,12 @@ match.app_id = "^Spotify$"
 default_scratchpad = "default"
 
 [[window_rule]]
+match.app_id = "^chrome-(.*?)-Default$"
+default_scratchpad = "default"
+opacity = 1
+default_maximize = true
+
+[[window_rule]]
 match.app_id = "^brave-origin$"
 default_scratchpad = "default"
 opacity = 1
@@ -16,3 +22,7 @@ opacity = 1
 match.app_id = "^com.obsproject.Studio$"
 default_scratchpad = "default"
 opacity = 0.90
+
+[[window_rule]]
+match.app_id = "^steam$"
+default_scratchpad = "default"
