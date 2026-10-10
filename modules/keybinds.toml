@@ -76,10 +76,10 @@
 "Mod+Ctrl+Space" = { action = "window-restore-from-scratchpad", repeat = false }
 "Mod+Tab" = "scratchpad-focus-next"
 
-"XF86AudioRaiseVolume" = "spawn:wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
-"XF86AudioLowerVolume" = "spawn:wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+"XF86AudioRaiseVolume" = "spawn:noctalia msg volume-up 2"
+"XF86AudioLowerVolume" = "spawn:noctalia msg volume-down 2"
 "XF86AudioPlay" = "spawn:playerctl play-pause"
 "XF86AudioNext" = "spawn:playerctl next"
 "XF86AudioPrev" = "spawn:playerctl previous"
-"XF86MonBrightnessUp" = "spawn:brightnessctl set +5%"
-"XF86MonBrightnessDown" = "spawn:brightnessctl set 5%-"
+"XF86MonBrightnessUp" = "spawn:noctalia msg brightness-up 2"
+"XF86MonBrightnessDown" = "spawn:noctalia msg brightness-down 2"
